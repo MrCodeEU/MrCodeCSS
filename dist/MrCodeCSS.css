@@ -1,90 +1,77 @@
 /* #region HTML*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
-
-/* Schriftart */
-* {
-  font-family: 'Raleway', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
+/* #region Schriftart*/
+html {
+  font-family: "Raleway", sans-serif;
   color: #333447;
   line-height: 1.5;
 }
-
-/* Default HMTL stuff*/
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  top: 0;
-  font-size: 100%;
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 8 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 24px;
+  }
 }
 
-/* #region Überschriften*/
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.0736rem;
+}
+h1 {
+  font-size: 27.648px;
+}
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: calc(27.648px + 26.352 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 54px;
+  }
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.728rem;
+}
+h2 {
+  font-size: 27.648px;
+}
+@media screen and (min-width: 320px) {
+  h2 {
+    font-size: calc(27.648px + 26.352 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 54px;
+  }
 }
 
 h3 {
-  font-size: 1.375rem;
+  font-size: 1.44rem;
+}
+h3 {
+  font-size: 23.04px;
+}
+@media screen and (min-width: 320px) {
+  h3 {
+    font-size: calc(23.04px + 12.96 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  h3 {
+    font-size: 36px;
+  }
 }
 
-h4 {
-  font-size: 1.125rem;
-}
-
-h5 {
-  font-size: 1rem;
-}
-
-h6 {
-  font-size: 0.875rem;
-}
-/* #endregion*/
-
-p {
-  font-size: 1.125rem;
-  font-weight: 200;
-  line-height: 1.8;
-}
-
-.font-light {
-  font-weight: 300;
-}
-
-.font-regular {
-  font-weight: 400;
-}
-
-.font-heavy {
-  font-weight: 700;
-}
-
-/* POSITIONING */
-
-.left {
-  text-align: left;
-}
-
-.right {
-  text-align: right;
-}
-
-.center {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.justify {
-  text-align: justify;
-}
-/* #endregion*/
-
+/*#endregion Schriftart*/
 /* #region Button */
 .button {
   background-color: #4B2D87;
@@ -98,10 +85,9 @@ p {
   margin: 4px 2px;
   cursor: pointer;
 }
+
 /* #endregion Button */
-
 /* #region Colors */
-
 /* Background */
 .bg-primary {
   background-color: #4B2D87;
@@ -116,23 +102,23 @@ p {
 }
 
 .bg-danger {
-  background-color: rgb(221, 1, 1);
+  background-color: #dd0101;
 }
 
 .bg-warning {
-  background-color: rgb(235, 235, 5);
+  background-color: #ebeb05;
 }
 
 .bg-info {
-  background-color: rgb(113, 139, 255);
+  background-color: #718bff;
 }
 
 .bg-light {
-  background-color: rgb(192, 192, 192);
+  background-color: silver;
 }
 
 .bg-dark {
-  background-color: rgb(134, 134, 134);
+  background-color: #868686;
 }
 
 .bg-muted {
@@ -161,23 +147,23 @@ p {
 }
 
 .txt-danger {
-  color: rgb(221, 1, 1);
+  color: #dd0101;
 }
 
 .txt-warning {
-  color: rgb(235, 235, 5);
+  color: #ebeb05;
 }
 
 .txt-info {
-  color: rgb(113, 139, 255);
+  color: #718bff;
 }
 
 .txt-light {
-  color: rgb(192, 192, 192);
+  color: silver;
 }
 
 .txt-dark {
-  color: rgb(134, 134, 134);
+  color: #868686;
 }
 
 .txt-muted {
@@ -193,9 +179,7 @@ p {
 }
 
 /* #endregion Colors */
-
 /* #region Grid */
-
 .container {
   width: 90%;
   margin-left: auto;
@@ -207,7 +191,7 @@ p {
   width: 100%;
 }
 
-.row [class^="col"] {
+.row [class^=col] {
   float: left;
   margin: 0.5rem 2%;
   min-height: 0.125rem;
@@ -277,22 +261,23 @@ p {
 }
 
 .row::after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .hidden-sm {
   display: none;
 }
 
-@media only screen and (min-width: 33.75em) {  /* 540px */
+@media only screen and (min-width: 33.75em) {
+  /* 540px */
   .container {
     width: 80%;
   }
 }
-
-@media only screen and (min-width: 45em) {  /* 720px */
+@media only screen and (min-width: 45em) {
+  /* 720px */
   .col-1 {
     width: 4.33%;
   }
@@ -345,14 +330,11 @@ p {
     display: block;
   }
 }
-
-@media only screen and (min-width: 60em) { /* 960px */
+@media only screen and (min-width: 60em) {
+  /* 960px */
   .container {
     width: 75%;
     max-width: 60rem;
   }
 }
 /* #endregion */
-
-
-

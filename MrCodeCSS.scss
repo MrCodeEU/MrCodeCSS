@@ -1,0 +1,327 @@
+/* #region HTML*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
+
+/* #region Schriftart*/
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+$mod_1: 1.2; // mobile
+$mod_2: 1.5; // desktop
+
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 24px;
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  font-family: 'Raleway', sans-serif;
+  color: #333447;
+  line-height: 1.5;
+}
+
+h1 {  
+  font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+h2 {  
+  font-size: $mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+h3 { 
+  font-size: $mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+}
+/*#endregion Schriftart*/
+
+/* #region Button */
+.button {
+  background-color: #4B2D87;
+  border: none;
+  color: #dbcdf8;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* #endregion Button */
+
+/* #region Colors */
+
+/* Background */
+.bg-primary {
+  background-color: #4B2D87;
+}
+
+.bg-secondary {
+  background-color: #7949da;
+}
+
+.bg-success {
+  background-color: yellowgreen;
+}
+
+.bg-danger {
+  background-color: rgb(221, 1, 1);
+}
+
+.bg-warning {
+  background-color: rgb(235, 235, 5);
+}
+
+.bg-info {
+  background-color: rgb(113, 139, 255);
+}
+
+.bg-light {
+  background-color: rgb(192, 192, 192);
+}
+
+.bg-dark {
+  background-color: rgb(134, 134, 134);
+}
+
+.bg-muted {
+  background-color: #919191;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+/* Text */
+.txt-primary {
+  color: #4B2D87;
+}
+
+.txt-secondary {
+  color: #7949da;
+}
+
+.txt-success {
+  color: yellowgreen;
+}
+
+.txt-danger {
+  color: rgb(221, 1, 1);
+}
+
+.txt-warning {
+  color: rgb(235, 235, 5);
+}
+
+.txt-info {
+  color: rgb(113, 139, 255);
+}
+
+.txt-light {
+  color: rgb(192, 192, 192);
+}
+
+.txt-dark {
+  color: rgb(134, 134, 134);
+}
+
+.txt-muted {
+  color: #969696;
+}
+
+.txt-white {
+  color: white;
+}
+
+.txt-black {
+  color: black;
+}
+
+/* #endregion Colors */
+
+/* #region Grid */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+/* #endregion */
+
+
+
