@@ -1,0 +1,16 @@
+$primary-col: #4B2D87;
+$primary-light-col: #dbcdf8;
+$secondary-col: #7949da;
+$success-col: yellowgreen;
+$danger-col: rgb(221, 1, 1);
+$warning-col: rgb(235, 235, 5);
+$info-col: rgb(113, 139, 255);
+$light-col: rgb(192, 192, 192);
+$dark-col: rgb(134, 134, 134);
+$white-col: white;
+$black-col: black;
+
+//second set of colours for darkmode
+//...
+
+$colours: $primary-col, $primary-light-col, $secondary-col, $success-col, $danger-col, $warning-col, $info-col, $light-col, $dark-col, $white-col, $black-col;

@@ -1,4 +1,8 @@
 Noch fehlende Elemente hinzufügen:
+- [ ] Responsive Text nachbessern bei Überschriften
+- [x] SCSS in mehrere Dateien aufteilen
+- [x] Button colors only border
+- [ ] Buttens mit sass für alle Farben
 - [ ] Grid richtig machen
 - [ ] Weitere elemente mit sass implimentieren
 - [ ] Button disign leicht anpassen

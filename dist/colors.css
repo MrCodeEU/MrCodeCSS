@@ -1,0 +1,88 @@
+/* #region Colors */
+/* Background */
+.bg-primary {
+  background-color: #4B2D87;
+}
+
+.bg-secondary {
+  background-color: #7949da;
+}
+
+.bg-success {
+  background-color: yellowgreen;
+}
+
+.bg-danger {
+  background-color: #dd0101;
+}
+
+.bg-warning {
+  background-color: #ebeb05;
+}
+
+.bg-info {
+  background-color: #718bff;
+}
+
+.bg-light {
+  background-color: silver;
+}
+
+.bg-dark {
+  background-color: #868686;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+/* Text */
+.txt-primary {
+  color: #4B2D87;
+}
+
+.txt-secondary {
+  color: #7949da;
+}
+
+.txt-success {
+  color: yellowgreen;
+}
+
+.txt-danger {
+  color: #dd0101;
+}
+
+.txt-warning {
+  color: #ebeb05;
+}
+
+.txt-info {
+  color: #718bff;
+}
+
+.txt-light {
+  color: silver;
+}
+
+.txt-dark {
+  color: #868686;
+}
+
+.txt-muted {
+  color: #969696;
+}
+
+.txt-white {
+  color: white;
+}
+
+.txt-black {
+  color: black;
+}
+
+/* #endregion Colors */
