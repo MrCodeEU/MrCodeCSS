@@ -27,7 +27,7 @@
 
 .button.bg-primary.border {
   background-color: white;
-  color: white;
+  color: black;
 }
 
 .button.bg-primary:hover {
@@ -37,7 +37,7 @@
 
 .button.bg-primary.border:hover {
   background-color: #4B2D87;
-  color: black;
+  color: white;
 }
 
 .button.bg-primary-light {
@@ -111,7 +111,7 @@
 
 .button.bg-danger.border {
   background-color: white;
-  color: white;
+  color: black;
 }
 
 .button.bg-danger:hover {
@@ -121,7 +121,7 @@
 
 .button.bg-danger.border:hover {
   background-color: #dd0101;
-  color: black;
+  color: white;
 }
 
 .button.bg-warning {
@@ -237,7 +237,7 @@
 
 .button.bg-black.border {
   background-color: white;
-  color: white;
+  color: black;
 }
 
 .button.bg-black:hover {
@@ -247,12 +247,12 @@
 
 .button.bg-black.border:hover {
   background-color: black;
-  color: black;
+  color: white;
 }
 
 /* #endregion Color Button */
 /* #region Colors */
-/* Background */
+/* #region Background */
 .bg-primary {
   background-color: #4B2D87;
 }
@@ -293,7 +293,8 @@
   background-color: black;
 }
 
-/* Text */
+/* #endregion */
+/* #region Text */
 .txt-primary {
   color: #4B2D87;
 }
@@ -323,11 +324,7 @@
 }
 
 .txt-dark {
-  color: #868686;
-}
-
-.txt-muted {
-  color: #969696;
+  color: #dd0101;
 }
 
 .txt-white {
@@ -338,8 +335,30 @@
   color: black;
 }
 
+/*#endregion*/
 /* #endregion Colors */
 /* #region Schriftart*/
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1280));
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+body {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 /*#endregion Schriftart*/
 /* #region Grid */
 /* #endregion */

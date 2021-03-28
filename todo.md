@@ -1,11 +1,11 @@
 Noch fehlende Elemente hinzufügen:
-- [ ] Responsive Text nachbessern bei Überschriften
+- [x] Responsive Text nachbessern + Überschriften + <p>
 - [x] SCSS in mehrere Dateien aufteilen
-- [x] Button colors only border
+- [x] Button colors with and without border
 - [x] Buttens mit sass für alle Farben
 - [ ] Grid richtig machen
 - [ ] Weitere elemente mit sass implimentieren
-- [ ] Button disign leicht anpassen
+- [x] Button disign leicht anpassen
 - [ ] Formelemente (Textboxen, etc.)
 - [ ] Navbar
 - [ ] Modal

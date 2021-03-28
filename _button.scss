@@ -31,12 +31,7 @@
 
     .button.bg-#{$name}.border {
         background-color: $white-col;
-        //Text sxhwarz wenn farbe zu dunkel sonst weiss
-        @if lightness($colour) <45% {
-            color: $white-col;
-        } @else {
-            color: $black-col;
-        }
+        color: $black-col;
     }
 
     .button.bg-#{$name}:hover {
@@ -46,7 +41,12 @@
 
     .button.bg-#{$name}.border:hover {
         background-color: $colour;
-        color: $black-col;
+        //Text sxhwarz wenn farbe zu dunkel sonst weiss
+        @if lightness($colour) <45% {
+            color: $white-col;
+        } @else {
+            color: $black-col;
+        }
     }
 }
 /* #endregion Color Button */

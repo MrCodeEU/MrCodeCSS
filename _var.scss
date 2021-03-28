@@ -10,9 +10,6 @@ $dark-col: rgb(134, 134, 134);
 $white-col: white;
 $black-col: black;
 
-//second set of colours for darkmode
-//...
-
 $colours: ( "primary":$primary-col,
             "primary-light": $primary-light-col,
             "secondary": $secondary-col,
@@ -24,3 +21,4 @@ $colours: ( "primary":$primary-col,
             "dark": $dark-col,
             "white": $white-col,
             "black": $black-col);
+//maybe darkmode colors(vlt. als zweites Projekt oder alles in einem?)
