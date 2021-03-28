@@ -11,3 +11,4 @@ Noch fehlende Elemente hinzufügen:
 - [ ] Modal
 - [ ] Karussel
 - [ ] weitere Strukturelemente die für Homepage nötig sind
+- [ ] Für Navbar und andere Bootstrap-elemente für die keine gute Lösung online gefunden werden kann in Boostrap selbst nachschauen
