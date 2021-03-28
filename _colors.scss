@@ -1,90 +1,87 @@
 /* #region Colors */
-
-/* Background */
+/scss
+/* #region Background */
 .bg-primary {
-    background-color: #4B2D87;
+    background-color: $primary-col;
   }
   
   .bg-secondary {
-    background-color: #7949da;
+    background-color: $secondary-col;
   }
   
   .bg-success {
-    background-color: yellowgreen;
+    background-color: $success-col;
   }
   
   .bg-danger {
-    background-color: rgb(221, 1, 1);
+    background-color: $danger-col;
   }
   
   .bg-warning {
-    background-color: rgb(235, 235, 5);
+    background-color: $warning-col;
   }
   
   .bg-info {
-    background-color: rgb(113, 139, 255);
+    background-color: $info-col;
   }
   
   .bg-light {
-    background-color: rgb(192, 192, 192);
+    background-color: $light-col;
   }
   
   .bg-dark {
-    background-color: rgb(134, 134, 134);
+    background-color: $dark-col;
   }
   
   .bg-white {
-    background-color: white;
+    background-color: $white-col;
   }
   
   .bg-black {
-    background-color: black;
+    background-color: $black-col;
   }
-  
-  /* Text */
+  /* #endregion */
+
+  /* #region Text */
   .txt-primary {
-    color: #4B2D87;
+    color: $primary-col;
   }
   
   .txt-secondary {
-    color: #7949da;
+    color: $secondary-col;
   }
   
   .txt-success {
-    color: yellowgreen;
+    color: $success-col;
   }
   
   .txt-danger {
-    color: rgb(221, 1, 1);
+    color: $danger-col;
   }
   
   .txt-warning {
-    color: rgb(235, 235, 5);
+    color: $warning-col;
   }
   
   .txt-info {
-    color: rgb(113, 139, 255);
+    color: $info-col;
   }
   
   .txt-light {
-    color: rgb(192, 192, 192);
+    color: $light-col;
   }
   
   .txt-dark {
-    color: rgb(134, 134, 134);
-  }
-  
-  .txt-muted {
-    color: #969696;
+    color: $danger-col;
   }
   
   .txt-white {
-    color: white;
+    color: $white-col;
   }
   
   .txt-black {
-    color: black;
+    color: $black-col;
   }
-  
+  /*#endregion*/
   /* #endregion Colors */
   

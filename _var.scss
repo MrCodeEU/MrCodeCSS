@@ -13,4 +13,14 @@ $black-col: black;
 //second set of colours for darkmode
 //...
 
-$colours: $primary-col, $primary-light-col, $secondary-col, $success-col, $danger-col, $warning-col, $info-col, $light-col, $dark-col, $white-col, $black-col;
+$colours: ( "primary":$primary-col,
+            "primary-light": $primary-light-col,
+            "secondary": $secondary-col,
+            "success": $success-col,
+            "danger": $danger-col,
+            "warning": $warning-col,
+            "info": $info-col,
+            "light": $light-col,
+            "dark": $dark-col,
+            "white": $white-col,
+            "black": $black-col);

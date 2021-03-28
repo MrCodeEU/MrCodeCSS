@@ -11,30 +11,42 @@
     cursor: pointer;
     border: 5px;
     border-radius: 5px;
-    transition-duration: 0.5s;;
-  }
+    transition-duration: 0.4s;
+}
 
-  .button.bg-primary {
-    background-color: $primary-col;
-    border: 5px solid $primary-col;
-    color: $white-col;
-  }
+/* #endregion Button */
 
-  .button.bg-primary.border {
-    background-color: $white-col;
-    border: 5px solid $primary-col;
-    color: $primary-col;
-  }
-  
-  .button.bg-primary:hover{
-    background-color: $white-col;
-    color: $primary-col;
-  }
+/* #region Color Button */
+@each $name, $colour in $colours {
+    .button.bg-#{$name} {
+        background-color: $colour;
+        border: 5px solid $colour;
+        //Text sxhwarz wenn farbe zu dunkel sonst weiss
+        @if lightness($colour) <45% {
+            color: $white-col;
+        } @else {
+            color: $black-col;
+        }
+    }
 
-  .button.bg-primary.border:hover{
-    background-color: $primary-col;
-    color: $white-col;
-  }
-  /* #endregion Button */
-  
-  //add forloop for all colours of buttons
+    .button.bg-#{$name}.border {
+        background-color: $white-col;
+        //Text sxhwarz wenn farbe zu dunkel sonst weiss
+        @if lightness($colour) <45% {
+            color: $white-col;
+        } @else {
+            color: $black-col;
+        }
+    }
+
+    .button.bg-#{$name}:hover {
+        background-color: $white-col;
+        color: $black-col;
+    }
+
+    .button.bg-#{$name}.border:hover {
+        background-color: $colour;
+        color: $black-col;
+    }
+}
+/* #endregion Color Button */

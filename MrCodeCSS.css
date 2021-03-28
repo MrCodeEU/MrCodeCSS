@@ -1,0 +1,346 @@
+/* #region HTML*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
+/* #region Button */
+.button {
+  background-color: #4B2D87;
+  color: #dbcdf8;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 5px;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+/* #endregion Button */
+/* #region Color Button */
+.button.bg-primary {
+  background-color: #4B2D87;
+  border: 5px solid #4B2D87;
+  color: white;
+}
+
+.button.bg-primary.border {
+  background-color: white;
+  color: white;
+}
+
+.button.bg-primary:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-primary.border:hover {
+  background-color: #4B2D87;
+  color: black;
+}
+
+.button.bg-primary-light {
+  background-color: #dbcdf8;
+  border: 5px solid #dbcdf8;
+  color: black;
+}
+
+.button.bg-primary-light.border {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-primary-light:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-primary-light.border:hover {
+  background-color: #dbcdf8;
+  color: black;
+}
+
+.button.bg-secondary {
+  background-color: #7949da;
+  border: 5px solid #7949da;
+  color: black;
+}
+
+.button.bg-secondary.border {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-secondary:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-secondary.border:hover {
+  background-color: #7949da;
+  color: black;
+}
+
+.button.bg-success {
+  background-color: yellowgreen;
+  border: 5px solid yellowgreen;
+  color: black;
+}
+
+.button.bg-success.border {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-success:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-success.border:hover {
+  background-color: yellowgreen;
+  color: black;
+}
+
+.button.bg-danger {
+  background-color: #dd0101;
+  border: 5px solid #dd0101;
+  color: white;
+}
+
+.button.bg-danger.border {
+  background-color: white;
+  color: white;
+}
+
+.button.bg-danger:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-danger.border:hover {
+  background-color: #dd0101;
+  color: black;
+}
+
+.button.bg-warning {
+  background-color: #ebeb05;
+  border: 5px solid #ebeb05;
+  color: black;
+}
+
+.button.bg-warning.border {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-warning:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-warning.border:hover {
+  background-color: #ebeb05;
+  color: black;
+}
+
+.button.bg-info {
+  background-color: #718bff;
+  border: 5px solid #718bff;
+  color: black;
+}
+
+.button.bg-info.border {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-info:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-info.border:hover {
+  background-color: #718bff;
+  color: black;
+}
+
+.button.bg-light {
+  background-color: silver;
+  border: 5px solid silver;
+  color: black;
+}
+
+.button.bg-light.border {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-light:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-light.border:hover {
+  background-color: silver;
+  color: black;
+}
+
+.button.bg-dark {
+  background-color: #868686;
+  border: 5px solid #868686;
+  color: black;
+}
+
+.button.bg-dark.border {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-dark:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-dark.border:hover {
+  background-color: #868686;
+  color: black;
+}
+
+.button.bg-white {
+  background-color: white;
+  border: 5px solid white;
+  color: black;
+}
+
+.button.bg-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-white:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-white.border:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-black {
+  background-color: black;
+  border: 5px solid black;
+  color: white;
+}
+
+.button.bg-black.border {
+  background-color: white;
+  color: white;
+}
+
+.button.bg-black:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-black.border:hover {
+  background-color: black;
+  color: black;
+}
+
+/* #endregion Color Button */
+/* #region Colors */
+/* Background */
+.bg-primary {
+  background-color: #4B2D87;
+}
+
+.bg-secondary {
+  background-color: #7949da;
+}
+
+.bg-success {
+  background-color: yellowgreen;
+}
+
+.bg-danger {
+  background-color: #dd0101;
+}
+
+.bg-warning {
+  background-color: #ebeb05;
+}
+
+.bg-info {
+  background-color: #718bff;
+}
+
+.bg-light {
+  background-color: silver;
+}
+
+.bg-dark {
+  background-color: #868686;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+/* Text */
+.txt-primary {
+  color: #4B2D87;
+}
+
+.txt-secondary {
+  color: #7949da;
+}
+
+.txt-success {
+  color: yellowgreen;
+}
+
+.txt-danger {
+  color: #dd0101;
+}
+
+.txt-warning {
+  color: #ebeb05;
+}
+
+.txt-info {
+  color: #718bff;
+}
+
+.txt-light {
+  color: silver;
+}
+
+.txt-dark {
+  color: #868686;
+}
+
+.txt-muted {
+  color: #969696;
+}
+
+.txt-white {
+  color: white;
+}
+
+.txt-black {
+  color: black;
+}
+
+/* #endregion Colors */
+/* #region Schriftart*/
+/*#endregion Schriftart*/
+/* #region Grid */
+/* #endregion */
+/*# sourceMappingURL=MrCodeCSS.css.map */
