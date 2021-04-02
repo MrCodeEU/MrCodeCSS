@@ -3,11 +3,12 @@ Noch fehlende Elemente hinzufügen:
 - [x] SCSS in mehrere Dateien aufteilen
 - [x] Button colors with and without border
 - [x] Buttens mit sass für alle Farben
-- [ ] Grid richtig machen
+- [x] Grid richtig machen
 - [ ] Weitere elemente mit sass implimentieren
 - [x] Button disign leicht anpassen
 - [ ] Formelemente (Textboxen, etc.)
-- [ ] Navbar
+- [x] Navbar funktionalität
+- [ ] Navbar design
 - [ ] Modal
 - [ ] Karussel
 - [ ] weitere Strukturelemente die für Homepage nötig sind
