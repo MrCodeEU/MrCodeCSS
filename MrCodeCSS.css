@@ -1686,4 +1686,66 @@ h3 {
 
 /* #endregion */
 /* #endregion */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #4B2D87;
+  padding: 16px;
+  color: silver;
+}
+
+.nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-link {
+  padding-left: 8px;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle img {
+  width: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-items,
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-items {
+    display: none;
+  }
+  .nav-right {
+    margin-left: 0;
+  }
+  .Navbar__ToggleShow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-toggle {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
+.nav-brand-image {
+  width: 150px;
+}
 /*# sourceMappingURL=MrCodeCSS.css.map */
