@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <nav>
         <div class="navbar">
             <div class="nav-link nav-brand">
@@ -56,14 +55,27 @@
         voluptate eu dolore aliqua. Ipsum consectetur Lorem qui exercitation ipsum. Incididunt proident tempor
         incididunt magna sunt sunt.</p>
     <br>
-    <div class="row center-sm">
-        <div class="col-8">
-            <form action="#">
-                <label for="Test" class="lbl-text">Name eingeben:</label>
-                <input type="text" name="Test" id="Test">
-                <label for="Test2" class="lbl-text">Name eingeben:</label>
-                <input type="text" name="Test" id="Test2">
-            </form>
+    <form action="#">
+        <label for="Test" class="lbl-text">Name eingeben:</label>
+        <input type="text" name="Test" id="Test" placeholder="Text eingeben...">
+        <!-- Date Picker selbst stylen und designen falls dringend gebraucht-->
+        <label for="Test2" class="lbl-text">Geburtsdatum eingeben:</label>
+        <input type="date" name="Test" id="Test2" placeholder="tt.mm.jjjj">
+        <label for="Test3" class="lbl-text">Geburtsdatum eingeben:</label>
+        <input type="number" name="Test" id="Test3" placeholder="Zahl eingeben...">
+        <button type="reset" class="button bg-primary">Reset</button>
+        <button type="submit" class="button bg-primary right">Fertig</button>
+    </form>
+
+    <div class="container-center">
+        <a href="#modal" id="modalButton" class="button bg-primary">Modal öffnen</a>
+    </div>
+
+    <div class="modal" id="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Modal Content Test</p>
         </div>
     </div>
 
@@ -105,7 +117,7 @@
     <footer class="footer-distributed">
 
         <div class="footer-left">
-            <img src="/Schwarz.png">
+            <img src="/Schwarz.png" alt="Footer-Brand-Logo">
             <h3>Über <span>MrCode.eu</span></h3>
 
             <p class="footer-links">

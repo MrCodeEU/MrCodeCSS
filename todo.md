@@ -9,7 +9,7 @@ Noch fehlende Elemente hinzufügen:
 - [ ] Formelemente (Textboxen, etc.)
 - [x] Navbar funktionalität
 - [ ] Navbar design
-- [ ] Modal
+- [ ] Alle Farben und größen mit Variablen ersetzen
+- [x] Modal
 - [ ] Karussel
 - [ ] weitere Strukturelemente die für Homepage nötig sind
-- [ ] Für Navbar und andere Bootstrap-elemente für die keine gute Lösung online gefunden werden kann in Boostrap selbst nachschauen
