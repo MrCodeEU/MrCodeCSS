@@ -1,2 +1,8 @@
 //everything that does not fit a category
 //Tooltips maybs?
+//#region body
+body{
+    display: flex;
+    flex-direction: column;
+}
+//#endregion

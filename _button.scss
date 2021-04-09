@@ -9,8 +9,8 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border: 5px;
-    border-radius: 5px;
+    border: $bor-width;
+    border-radius: $bor-radius;
     transition-duration: 0.4s;
 }
 
@@ -20,7 +20,7 @@
 @each $name, $colour in $colours {
     .button.bg-#{$name} {
         background-color: $colour;
-        border: 5px solid $colour;
+        border: $bor-radius solid $colour;
         //Text sxhwarz wenn farbe zu dunkel sonst weiss
         @if lightness($colour) <45% {
             color: $white-col;

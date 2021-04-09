@@ -16,6 +16,6 @@ document.querySelector('.nav-toggle').addEventListener('click', classToggle);
 /*
     functions for Karusel
 */
-
+//#endregion
 
 //#endregion

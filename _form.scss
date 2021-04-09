@@ -1,5 +1,28 @@
 //sass for diffrent form elementes
-//Textbox
+//#region Textbox
+input[type="Text"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: $bor-width solid $primary-light-col;
+    @include fluid-type($min_width, $max_width, 16px, 20px);
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type="Text"]:focus{
+    border: none;
+    outline: 0;
+    border-bottom: $bor-width solid $primary-col;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+label.lbl-text{
+    @include fluid-type($min_width, $max_width, 18px, 22px);
+    font-weight: 500;
+}
+//#endregion
 //Date
 //Numbers
 //Buttons

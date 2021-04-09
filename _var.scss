@@ -7,6 +7,7 @@ $warning-col: rgb(235, 235, 5);
 $info-col: rgb(113, 139, 255);
 $light-col: rgb(192, 192, 192);
 $dark-col: rgb(134, 134, 134);
+$verydark-col: rgb(46, 46, 46);
 $white-col: white;
 $black-col: black;
 
@@ -19,6 +20,11 @@ $colours: ( "primary":$primary-col,
             "info": $info-col,
             "light": $light-col,
             "dark": $dark-col,
+            "verydark": $verydark-col,
             "white": $white-col,
             "black": $black-col);
 //maybe darkmode colors(vlt. als zweites Projekt oder alles in einem?)
+
+//Borders
+$bor-radius: 5px;
+$bor-width: 5px;

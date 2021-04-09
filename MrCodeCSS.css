@@ -208,6 +208,27 @@
   color: black;
 }
 
+.button.bg-verydark {
+  background-color: #2e2e2e;
+  border: 5px solid #2e2e2e;
+  color: white;
+}
+
+.button.bg-verydark.border {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-verydark:hover {
+  background-color: white;
+  color: black;
+}
+
+.button.bg-verydark.border:hover {
+  background-color: #2e2e2e;
+  color: white;
+}
+
 .button.bg-white {
   background-color: white;
   border: 5px solid white;
@@ -359,23 +380,263 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-/* 
-$mod_1: 1.2; // mobile
-$mod_2: 1.5; // desktop
-
-h1 {  
-  font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
-  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
-}
-h2 {  
-  font-size: $mod_1*$mod_1*$mod_1 *1rem; 
-  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
-}
-h3 { 
-  font-size: $mod_1*$mod_1 *1rem;
-  @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
-} */
 /*#endregion Schriftart*/
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+  header {
+    padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  background-color: #2e2e2e;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .footer-distributed {
+    font-size: calc(12px + 6 * ((100vw - 320px) / 1280));
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .footer-distributed {
+    font-size: 18px;
+  }
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: white;
+  margin: 0;
+}
+
+.footer-distributed .footer-left img {
+  width: 30%;
+}
+
+.footer-distributed h3 span {
+  color: #ebeb05;
+}
+
+.footer-distributed .footer-links {
+  color: white;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: silver;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #2e2e2e;
+  color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: silver;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center h3 {
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #ebeb05;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-center p a {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .footer-distributed .footer-center p a {
+    font-size: calc(16px + 4 * ((100vw - 320px) / 1280));
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .footer-distributed .footer-center p a {
+    font-size: 20px;
+  }
+}
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: silver;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #2e2e2e;
+  border-radius: 2px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+
+input[type="Text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-bottom: 5px solid #dbcdf8;
+  font-family: 'Raleway', sans-serif;
+}
+
+input[type="Text"] {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  input[type="Text"] {
+    font-size: calc(16px + 4 * ((100vw - 320px) / 1280));
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  input[type="Text"] {
+    font-size: 20px;
+  }
+}
+
+input[type="Text"]:focus {
+  border: none;
+  outline: 0;
+  border-bottom: 5px solid #4B2D87;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+label.lbl-text {
+  font-weight: 500;
+}
+
+label.lbl-text {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  label.lbl-text {
+    font-size: calc(18px + 4 * ((100vw - 320px) / 1280));
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  label.lbl-text {
+    font-size: 22px;
+  }
+}
+
 /* #region Grid */
 /* #region Variables */
 /* #endregion */
@@ -1686,6 +1947,16 @@ h3 {
 
 /* #endregion */
 /* #endregion */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
