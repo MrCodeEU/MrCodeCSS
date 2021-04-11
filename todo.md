@@ -13,3 +13,4 @@ Noch fehlende Elemente hinzufügen:
 - [x] Modal
 - [ ] Karussel
 - [ ] weitere Strukturelemente die für Homepage nötig sind
+- [ ] SObald alle Elemente Fertig sind wird die erste Version der Homepage designed --> diffrent Repo
