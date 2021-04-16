@@ -7,7 +7,7 @@ Noch fehlende Elemente hinzufügen:
 - [ ] Weitere elemente mit sass implimentieren
 - [x] Button disign leicht anpassen
 - [ ] Formelemente (Textboxen, etc.)
-- [x] Navbar funktionalität
+- [ ] Navbar funktionalität
 - [ ] Navbar design
 - [ ] Alle Farben und größen mit Variablen ersetzen
 - [x] Modal

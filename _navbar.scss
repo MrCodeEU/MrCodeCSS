@@ -1,10 +1,5 @@
-/*Configurações Globais*/
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+//funktioniert immer noch nicht wie gewollt
+//weiter Tutorials um die jetztige funktionalität zu verbessern
 a {
     text-decoration: none;
 }
@@ -68,18 +63,19 @@ header {
 }
 .menu-icon > img{
     height: 3rem;
-    margin: 0.5rem 0.2rem 0.5rem 0;
+    margin: 0.5rem 0 0.5rem 0.2rem;
 }
 /*Início das configurações da Navigation com dispositivos < 768px*/
 @media screen and (max-width: 768px) {
     .menu {
         width: 100%;
         height: auto;
+        background: $primary-col;
+    	overflow: hidden;
     }
     .menu ul {
         display: block;
         max-height: 0;
-    	overflow: hidden;
     	-webkit-transition: max-height 0.3s;
     	-moz-transition: max-height 0.3s;
         -ms-transition: max-height 0.3s;
@@ -103,7 +99,7 @@ header {
         line-height: 60px;
     }
     //#menuToggle:checked ~ ul
-    #menuToggle ~ ul {
-        max-height: 12rem;
+    #menuToggle:checked ~ ul {
+        max-height: 16rem;
     }
 }
