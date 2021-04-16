@@ -13,7 +13,7 @@ footer{
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-    @include fluid-type($min_width, $max_width, 12px, 18px);
+    @include font-size(1rem);
 	padding: 50px 50px 60px 50px;
 	margin-top: 80px;
 }
@@ -98,7 +98,7 @@ footer{
 }
 .footer-distributed .footer-center p a{
 	color:  $warning-col;
-    @include fluid-type($min_width, $max_width, 16px, 20px);
+    @include font-size(1rem);
 	text-decoration: none;;
 }
 //#endregion
