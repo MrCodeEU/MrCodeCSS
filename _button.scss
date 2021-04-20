@@ -6,7 +6,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    @include font-size(1rem);
+    @include font-size(1rem *1.25);
     margin: 4px 2px;
     cursor: pointer;
     border: $bor-width;

@@ -1,0 +1,55 @@
+//#region navbar
+/* Add a black background color to the top navigation */
+.navbar {
+    background-color: $primary-col;
+    overflow: hidden;
+    //height: 4rem;
+}
+
+.navbar-element {
+    float: right;
+    display: block;
+    height: 4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: center;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    display: flex;
+    color: $white-col;
+    text-align: center;
+    padding-top: 1rem;
+    text-decoration: none;
+    @include font-size(1rem * 1.5);
+}
+/* Change the color of links on hover */
+.navbar div.navbar-element:hover {
+    background-color: $info-col;
+    a {
+        color: black;
+    }
+}
+/* Add an active class to highlight the current page */
+.navbar div.active {
+    background-color: $primary-light-col;
+    color: white;
+    float: left;
+    margin-left: 2rem;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.navbar-logo > img {
+    height: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    float: left;
+    display: block;
+    text-align: center;
+}
+.navbar .navbar-burger {
+    display: none;
+    height: 3rem;
+}
+//#endregion

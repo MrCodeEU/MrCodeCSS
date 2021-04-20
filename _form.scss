@@ -12,7 +12,7 @@ input[type="Text"]{
     box-sizing: border-box;
     border: none;
     border-bottom: $bor-width solid $primary-light-col;
-    @include rfs(1rem);
+    @include font-size(1rem * 1.25);
     font-family: 'Raleway', sans-serif;
 }
 
@@ -24,7 +24,7 @@ input[type="Text"]:focus{
     transition-duration: 0.5s;
 }
 label.lbl-text{
-    @include rfs(1rem);
+    @include font-size(1rem*1.25);
     font-weight: 500;
 }
 //#endregion
@@ -38,7 +38,7 @@ input[type="Date"]{
     box-sizing: border-box;
     border: none;
     border-bottom: $bor-width solid $primary-light-col;
-    @include rfs(1rem);
+    @include font-size(1rem * 1.25);
     font-family: 'Raleway', sans-serif;
 }
 
@@ -58,7 +58,7 @@ input[type="Number"]{
     box-sizing: border-box;
     border: none;
     border-bottom: $bor-width solid $primary-light-col;
-    @include rfs(1rem);
+    @include font-size(1rem * 1.25);
     font-family: 'Raleway', sans-serif;
 }
 

@@ -9,7 +9,31 @@ body{
 }
 
 h1{
-    
+    @include font-size(1rem*3);
+}
+
+h2{
+    @include font-size(1rem*2.5);
+}
+
+h3{
+    @include font-size(1rem*2);
+}
+
+h4{
+    @include font-size(1rem*1.5);
+}
+
+h5{
+    @include font-size(1rem*1.25);
+}
+
+h6{
+    @include font-size(1rem*1);
+}
+
+p{
+    @include font-size(1rem*1.25);
 }
 
 .container-center{
