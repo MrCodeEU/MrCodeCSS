@@ -1,55 +1,155 @@
-//#region navbar
-/* Add a black background color to the top navigation */
-.navbar {
+//#region Navbar
+nav {
+    height: 5rem;
+    width: 100%;
     background-color: $primary-col;
-    overflow: hidden;
-    //height: 4rem;
+    //box-shadow ??
+    display: flex;
+    z-index: 10;
 }
 
-.navbar-element {
-    float: right;
-    display: block;
+.nav-logo img {
     height: 4rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 88%;
+    padding: 0 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: $white-col;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    justify-content: center;
 }
 
-/* Style the links inside the navigation bar */
-.navbar a {
+.nav-links li a:hover {
+    color: $black-col;
+    transition: ease 0.4s;
+}
+
+.nav-links li a:after {
+    position: relative;
+    float: left;
     display: flex;
-    color: $white-col;
-    text-align: center;
-    padding-top: 1rem;
-    text-decoration: none;
-    @include font-size(1rem * 1.5);
+    transition: all ease-in-out .4s;
+    background: $secondary-col;
+    content: "";
+    box-sizing: content-box;
+    height: 6px;
+    width: 0%;
 }
-/* Change the color of links on hover */
-.navbar div.navbar-element:hover {
-    background-color: $info-col;
-    a {
-        color: black;
-    }
+
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
-/* Add an active class to highlight the current page */
-.navbar div.active {
-    background-color: $primary-light-col;
-    color: white;
-    float: left;
-    margin-left: 2rem;
-}
-/* Hide the link that should open and close the topnav on small screens */
-.navbar-logo > img {
-    height: 3rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    float: left;
-    display: block;
-    text-align: center;
-}
-.navbar .navbar-burger {
+.hamburger{
     display: none;
-    height: 3rem;
 }
+
+.nav-links li a:hover:not(.button):after{
+    width: 100%;
+}
+
+.button.nav-button {
+    color: $white-col;
+    border-radius: 25px;
+    padding: 7px 5px;
+    @include font-size(1rem);
+}
+
+.button.nav-button:hover {
+    background: $primary-light-col;
+}
+
+.button.nav-button.border {
+    background: $primary-col;
+    color: $white-col;
+    border-radius: 25px;
+    border-width: 4px;
+}
+
+//#region responsive
+@media screen and (max-width: 800px) {
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .nav-links{
+        position: fixed;
+        background-color: $primary-col;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        -webkit-clip-path: circle(50px at 90% -20%);
+        clip-path: circle(50px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open{
+        -webkit-clip-path: circle(200% at 90% -20%);
+        clip-path: circle(200% at 90% -20%);
+        pointer-events: all;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    @for $i from 1 to 7{
+        .nav-links li:nth-child(#{$i}){
+            transition: all 0.5s ease 0.2s*$i;
+            margin: 1rem;
+        }
+    }
+
+    li.fade{
+        opacity: 1;
+    }
+
+    //animate hamburger
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+
+    .toggle .line2{
+        transition: all 0.7s ease;
+        width: 0;
+        opacity: 0;
+    }
+
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+
+
+}
+//#endregion
+
 //#endregion

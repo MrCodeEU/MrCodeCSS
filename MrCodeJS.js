@@ -1,14 +1,23 @@
 //#region Navbar
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function Navbar() {
-  var x = document.getElementById("navbar");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
-  }
-}
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+  //animate links
+  navLinks.classList.toggle("open");
+  
+  links.forEach(link => {
+    link.classList.toggle("fade");
+  });
+
+  //animate hamburger
+  hamburger.classList.toggle("toggle");
+})
+
 //#endregion
+
 //#region Modal
 // Get the modal
 var modal = document.getElementById("modal");
