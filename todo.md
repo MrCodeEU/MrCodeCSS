@@ -16,3 +16,5 @@ Noch fehlende Elemente hinzufügen:
 - [ ] Karussel
 - [ ] weitere Strukturelemente die für Homepage nötig sind
 - [ ] Sobald alle Elemente Fertig sind wird die erste Version der Webseite
+- [ ] Footer icons
+- [ ] Button animations cooler
