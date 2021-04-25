@@ -1,19 +1,38 @@
 //sass for diffrent form elementes
 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
+
+form .form-heading{
+    display: block;
+    p{
+        margin-top: 0.5rem;
+        margin-left: 0.4rem;
+        @include font-size(1rem*1.75);
+        font-weight: 600;
+    }
+}
+
+form label{
+    margin-left: 0.5rem;
+}
+
 //#region Textbox
 input[type="Text"]{
-    width: 100%;
+    width: 90%;
     padding: 10px 15px 5px;
-    margin: 0px 0 20px;
+    margin: 0.2rem auto 0.2rem auto;
     box-sizing: border-box;
     border: none;
     border-bottom: $bor-width solid $primary-light-col;
     @include font-size(1rem * 1.25);
-    font-family: 'Raleway', sans-serif;
 }
 
 input[type="Text"]:focus{
@@ -32,14 +51,13 @@ label.lbl-text{
 // #region Date
 //Style für Picker selbst anpassen und für Safari fixen?!?!?
 input[type="Date"]{
-    width: 100%;
+    width: 90%;
     padding: 10px 15px 5px;
-    margin: 0px 0 20px;
+    margin: 0.2rem auto 0.2rem auto;
     box-sizing: border-box;
     border: none;
     border-bottom: $bor-width solid $primary-light-col;
     @include font-size(1rem * 1.25);
-    font-family: 'Raleway', sans-serif;
 }
 
 input[type="Date"]:focus{
@@ -52,14 +70,13 @@ input[type="Date"]:focus{
 //#endregion
 //#region Numbers
 input[type="Number"]{
-    width: 100%;
+    width: 90%;
     padding: 10px 15px 5px;
-    margin: 0px 0 20px;
+    margin: 0.2rem auto 0.2rem auto;
     box-sizing: border-box;
     border: none;
     border-bottom: $bor-width solid $primary-light-col;
     @include font-size(1rem * 1.25);
-    font-family: 'Raleway', sans-serif;
 }
 
 input[type="Number"]:focus{
@@ -69,10 +86,10 @@ input[type="Number"]:focus{
     transition: ease-in-out;
     transition-duration: 0.5s;
 }
-//#endregion
-//#region Button
-form > button.right{
-    float: right;
+
+.form-controls{
+    display: flex;
+    justify-content: flex-end;
 }
 //#endregion
 //#region Modal

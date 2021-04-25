@@ -57,25 +57,23 @@ nav {
     display: none;
 }
 
-.nav-links li a:hover:not(.button):after{
+.nav-links li a:hover:not(.nav-button):after{
     width: 100%;
 }
 
-.button.nav-button {
+.nav-button {
     color: $white-col;
-    border-radius: 25px;
     padding: 7px 5px;
     @include font-size(1rem);
 }
 
-.button.nav-button:hover {
+.nav-button:hover {
     background: $primary-light-col;
 }
 
-.button.nav-button.border {
+.nav-button.border {
     background: $primary-col;
     color: $white-col;
-    border-radius: 25px;
     border-width: 4px;
 }
 

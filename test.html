@@ -24,8 +24,8 @@
             <li><a href="/old">Home</a></li>
             <li><a href="/old">WIP</a></li>
             <li><a href="/old">Alte Webseitee</a></li>
-            <li><a href="/old" class="nav-button button bg-primary-light border">Anmelden</a></li>
-            <li><a href="/old" class="nav-button button bg-primary-light">Registrieren</a></li>
+            <li><a href="/old" class="nav-button button-primary-light-primary border">Anmelden</a></li>
+            <li><a href="/old" class="nav-button button-primary-light-primary-light">Registrieren</a></li>
         </ul>
     </nav>
 
@@ -56,7 +56,10 @@
         voluptate eu dolore aliqua. Ipsum consectetur Lorem qui exercitation ipsum. Incididunt proident tempor
         incididunt magna sunt sunt.</p>
     <br>
-    <form action="/old">
+    <form action="/old" class="shadow bg-info">
+        <div class="form-heading">
+            <p>Test Form</p>
+        </div>
         <label for="Test" class="lbl-text">Name eingeben:</label>
         <input type="text" name="Test" id="Test" placeholder="Text eingeben...">
         <!-- Date Picker selbst stylen und designen falls dringend gebraucht-->
@@ -64,12 +67,14 @@
         <input type="date" name="Test" id="Test2" placeholder="tt.mm.jjjj">
         <label for="Test3" class="lbl-text">Geburtsdatum eingeben:</label>
         <input type="number" name="Test" id="Test3" placeholder="Zahl eingeben...">
-        <button type="reset" class="button bg-primary">Reset</button>
-        <button type="submit" class="button bg-primary right">Fertig</button>
+        <div class="form-controls">
+            <button type="reset" class="button-primary-white">Reset</button>
+            <button type="submit" class="button-primary-white right">Fertig</button>
+        </div>
     </form>
 
     <div class="container-center">
-        <a href="#modal" id="modalButton" class="button bg-primary">Modal öffnen</a>
+        <a href="#modal" id="modalButton" class="button-primary-white pulse">Modal öffnen</a>
     </div>
 
     <div class="modal" id="modal">
@@ -80,39 +85,93 @@
         </div>
     </div>
 
+    <div class="row center">
+        <div class="card shadow bg-info col-xs-5">
+            <div class="card-img"><img src="/Logo-02.png" alt="card test image" class="bg-black"></div>
+            <div class=" card-text">
+                <p> Pariatur ipsum cupidatat sunt nisi irure eiusmod et tempor officia elit. Deserunt magna sunt anim
+                    minim
+                    est
+                    et
+                    fugiat. Irure qui voluptate minim nulla consectetur reprehenderit non laborum eiusmod anim esse.
+                    Ipsum
+                    dolore
+                    enim voluptate labore irure eiusmod deserunt ipsum eiusmod sit duis anim.</p>
+            </div>
+            <div class="card-controls">
+                <a href="/old" class="button-primary-info">Alte Webseite</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row center">
+        <div class="article">
+            <div class="article-img"><img src="/Logo-02.png" alt="article test img" class="bg-primary"></div>
+            <div class="article-text">
+                <p> Pariatur ipsum cupidatat sunt nisi irure eiusmod et tempor officia elit. Deserunt magna sunt anim
+                    minim
+                    est
+                    et
+                    fugiat. Irure qui voluptate minim nulla consectetur reprehenderit non laborum eiusmod anim esse.
+                    Ipsum
+                    dolore
+                    enim voluptate labore irure eiusmod deserunt ipsum eiusmod sit duis anim.</p>
+            </div>
+            <div class="article-controls">
+                <a href="/old" class="button-primary-info">Alte Webseite</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row center-md">
+        <div class="article right">
+            <div class="article-text">
+                <p> Pariatur ipsum cupidatat sunt nisi irure eiusmod et tempor officia elit. Deserunt magna sunt anim
+                    minim
+                    est
+                    et
+                    fugiat. Irure qui voluptate minim nulla consectetur reprehenderit non laborum eiusmod anim esse.
+                    Ipsum
+                    dolore
+                    enim voluptate labore irure eiusmod deserunt ipsum eiusmod sit duis anim.</p>
+            </div>
+            <div class="article-img"><img src="/Logo-02.png" alt="article test img" class="bg-primary"></div>
+        </div>
+    </div>
+
     <br>
     <div class="row center-md">
-        <a href="/old" class="button bg-primary col-md-5">Test primary</a>
-        <a href="/old" class="button bg-secondary col-md-3">Test secondary</a>
-        <a href="/old" class="button bg-success col-md-2">Test success</a>
-        <a href="/old" class="button bg-danger col-md-2">Test danger</a>
+        <a href="/old" class="button-primary-white col-md-5">Test primary</a>
+        <a href="/old" class="button-secondary-white col-md-3">Test secondary</a>
+        <a href="/old" class="button-success-white col-md-2">Test success</a>
+        <a href="/old" class="button-danger-white col-md-2">Test danger</a>
     </div>
     <div class="row center-md">
-        <a href="/old" class="button bg-warning">Test warning</a>
-        <a href="/old" class="button bg-info">Test info</a>
-        <a href="/oldt" class="button bg-light"> Test light</a>
+        <a href="/old" class="button-warning-white">Test warning</a>
+        <a href="/old" class="button-info-white">Test info</a>
+        <a href="/oldt" class="button-light-white"> Test light</a>
     </div>
     <div class="row center-md">
-        <a href="/old" class="button bg-dark">Test dark</a>
-        <a href="/old" class="button bg-white">Test white</a>
-        <a href="/old" class="button bg-black">Test black</a>
+        <a href="/old" class="button-dark-white">Test dark</a>
+        <a href="/old" class="button-white-white">Test white</a>
+        <a href="/old" class="button-black-white">Test black</a>
     </div>
     <br>
     <div class="row center-md">
-        <a href="/old" class="button bg-primary border">Test primary</a>
-        <a href="/old" class="button bg-secondary border">Test secondary</a>
-        <a href="/old" class="button bg-success border">Test success</a>
-        <a href="/old" class="button bg-danger border">Test danger</a>
+        <a href="/old" class="button-primary-white border">Test primary</a>
+        <a href="/old" class="button-secondary-white border">Test secondary</a>
+        <a href="/old" class="button-success-white border">Test success</a>
+        <a href="/old" class="button-danger-white border">Test danger</a>
     </div>
     <div class="row center-md">
-        <a href="/old" class="button bg-warning border">Test warning</a>
-        <a href="/old" class="button bg-info border">Test info</a>
-        <a href="/old" class="button bg-light border"> Test light</a>
+        <a href="/old" class="button-warning-white border">Test warning</a>
+        <a href="/old" class="button-info-white border">Test info</a>
+        <a href="/old" class="button-light-white border"> Test light</a>
     </div>
     <div class="row center-md">
-        <a href="/old" class="button bg-dark border">Test dark</a>
-        <a href="/old" class="button bg-white border">Test white</a>
-        <a href="/old" class="button bg-black border">Test black</a>
+        <a href="/old" class="button-dark-white border">Test dark</a>
+        <a href="/old" class="button-white-white border">Test white</a>
+        <a href="/old" class="button-black-white border">Test black</a>
     </div>
 
     <footer>
@@ -140,7 +199,7 @@
                     verwenden um mich zu kontaktieren:</p>
             </div>
             <div class="footer-email txt-warning">
-                <p>dev@mrcode.eu</p>
+                <p><a href="mailto:dev@mrcode.eu">dev@mrcode.eu</a></p>
             </div>
         </div>
         <div class="footer-right">
@@ -148,7 +207,9 @@
                 <p>Über Mich</p>
             </div>
             <div class="footer-text txt-light">
-                <p>Ich bin ein einfacher Hobby Programmierer der hoffentlich bald studieren geht um eine bessere Webseite zu designen. Diese Seite wird euf meinem Raspberry Pi 4B gehostet also können jederzeit Probleme auftretten.</p>
+                <p>Ich bin ein einfacher Hobby Programmierer der hoffentlich bald studieren geht um eine bessere
+                    Webseite zu designen. Diese Seite wird euf meinem Raspberry Pi 4B gehostet also können jederzeit
+                    Probleme auftretten.</p>
             </div>
         </div>
         <div class="footer-under">

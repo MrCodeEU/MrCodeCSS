@@ -1,0 +1,36 @@
+.article{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+}
+
+.article-img{
+    display: flex;
+    justify-content: center;
+}
+
+.article-img img{
+    height: 10rem;
+}
+
+.article-text{
+    display: flex;
+    @include font-size(1rem * 1.25);
+    p{
+        margin: 0.5rem;
+    }
+}
+
+.article-controls{
+    display: flex;
+    align-items: flex-end;
+}
+
+@media screen and(max-width: 800px){
+    .article{
+        flex-direction: column;
+    }
+    .article.right{
+        flex-direction: column-reverse;
+    }
+}

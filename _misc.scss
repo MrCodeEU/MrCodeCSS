@@ -41,3 +41,9 @@ p{
     margin-right: auto;
 }
 //#endregion
+
+//#region page wide style
+.shadow{
+    box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+}
+//endregion

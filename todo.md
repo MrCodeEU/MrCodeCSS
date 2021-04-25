@@ -5,16 +5,20 @@ Noch fehlende Elemente hinzufügen:
 - [x] Button colors with and without border
 - [x] Buttens mit sass für alle Farben
 - [x] Grid richtig machen
-- [ ] Weitere elemente mit sass implimentieren
 - [x] Button disign leicht anpassen
 - [x] Formelemente (Textboxen, etc.)
 - [x] Navbar funktionalität
 - [x] Navbar design
 - [ ] Alle Farben und größen mit Variablen ersetzen
 - [x] Modal
-- [ ] Footer neu desginen responsivenes ist fertig
+- [x] Footer neu desginen responsivenes
 - [ ] Karussel
 - [ ] weitere Strukturelemente die für Homepage nötig sind
 - [ ] Sobald alle Elemente Fertig sind wird die erste Version der Webseite
 - [ ] Footer icons
-- [ ] Button animations cooler
+- [x] Fonts awesom integrieren für icons ?
+- [ ] Icons aus dem Web ziehen
+- [x] Button animations cooler
+- [ ] Button mit button tag machen statt link
+- [ ] Button muss so erstellt werden, dass jeweils Farbe und Farbe bei hovern festgelegt werden kann (button bg-primary -> button-primary-info)
+- [ ] Navbar links statt unterstreichen soll kompletter hintergrund von links nach rechts sliden bei hover

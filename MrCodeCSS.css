@@ -1,277 +1,6773 @@
 /* #region HTML*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
-/* #region Button */
-.button {
+.button-primary-primary {
   background-color: #4b2d87;
-  color: #8b44ca;
-  padding: 15px 32px;
+  color: white;
+  padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.25rem;
-  margin: 4px 2px;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
   cursor: pointer;
-  border: 5px;
-  border-radius: 5px;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-}
-
-/* #endregion Button */
-/* #region Color Button */
-.button.bg-primary {
-  background-color: #4b2d87;
+  border-radius: 0;
   border: 5px solid #4b2d87;
-  color: white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.button.bg-primary.border {
-  background-color: white;
-  color: black;
-}
-
-.button.bg-primary:hover {
-  background-color: white;
-  color: black;
-}
-
-.button.bg-primary.border:hover {
+.button-primary-primary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #4b2d87;
   color: white;
 }
 
-.button.bg-primary-light {
+.button-primary-primary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-primary.border {
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-primary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-primary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-primary-light {
+  background-color: #4b2d87;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #4b2d87;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-primary-light.border {
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-secondary {
+  background-color: #4b2d87;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #4b2d87;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-secondary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-primary-secondary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-secondary.border {
+  background-color: #7949da;
+  color: black;
+}
+
+.button-primary-secondary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-secondary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-success {
+  background-color: #4b2d87;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #4b2d87;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-success:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-primary-success:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-success.border {
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-primary-success.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-success.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-danger {
+  background-color: #4b2d87;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #4b2d87;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-danger:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-primary-danger:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-danger.border {
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-primary-danger.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-danger.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-warning {
+  background-color: #4b2d87;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #4b2d87;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-warning:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-primary-warning:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-warning.border {
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-primary-warning.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-warning.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-info {
+  background-color: #4b2d87;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #4b2d87;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-info:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-primary-info:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-info.border {
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-primary-info.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-info.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light {
+  background-color: #4b2d87;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #4b2d87;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light.border {
+  background-color: silver;
+  color: black;
+}
+
+.button-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-dark {
+  background-color: #4b2d87;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #4b2d87;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-dark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-primary-dark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-dark.border {
+  background-color: #868686;
+  color: black;
+}
+
+.button-primary-dark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-dark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-verydark {
+  background-color: #4b2d87;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #4b2d87;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-verydark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-primary-verydark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-verydark.border {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-primary-verydark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-verydark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-white {
+  background-color: #4b2d87;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #4b2d87;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-white:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-primary-white:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button-primary-white.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-white.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-black {
+  background-color: #4b2d87;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #4b2d87;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-black:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-primary-black:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-black.border {
+  background-color: black;
+  color: white;
+}
+
+.button-primary-black.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-black.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-primary {
+  background-color: #8b44ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
   border: 5px solid #8b44ca;
-  color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.button.bg-primary-light.border {
-  background-color: white;
-  color: black;
+.button-primary-light-primary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
 }
 
-.button.bg-primary-light:hover {
-  background-color: white;
-  color: black;
+.button-primary-light-primary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
-.button.bg-primary-light.border:hover {
+.button-primary-light-primary.border {
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-primary-light-primary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #8b44ca;
   color: black;
 }
 
-.button.bg-secondary {
+.button-primary-light-primary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-primary-light {
+  background-color: #8b44ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #8b44ca;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-light-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-primary-light.border {
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-secondary {
+  background-color: #8b44ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #8b44ca;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-light-secondary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #7949da;
+  color: black;
+}
+
+.button-primary-light-secondary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-secondary.border {
+  background-color: #7949da;
+  color: black;
+}
+
+.button-primary-light-secondary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-secondary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-success {
+  background-color: #8b44ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #8b44ca;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-light-success:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-primary-light-success:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-success.border {
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-primary-light-success.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-success.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-danger {
+  background-color: #8b44ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #8b44ca;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-light-danger:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-primary-light-danger:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-danger.border {
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-primary-light-danger.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-danger.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-warning {
+  background-color: #8b44ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #8b44ca;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-light-warning:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-primary-light-warning:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-warning.border {
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-primary-light-warning.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-warning.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-info {
+  background-color: #8b44ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #8b44ca;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-light-info:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-primary-light-info:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-info.border {
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-primary-light-info.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-info.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-light {
+  background-color: #8b44ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #8b44ca;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-light-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-primary-light-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-light.border {
+  background-color: silver;
+  color: black;
+}
+
+.button-primary-light-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-dark {
+  background-color: #8b44ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #8b44ca;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-light-dark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-primary-light-dark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-dark.border {
+  background-color: #868686;
+  color: black;
+}
+
+.button-primary-light-dark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-dark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-verydark {
+  background-color: #8b44ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #8b44ca;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-light-verydark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-primary-light-verydark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-verydark.border {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-primary-light-verydark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-verydark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-white {
+  background-color: #8b44ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #8b44ca;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-light-white:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-primary-light-white:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button-primary-light-white.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-white.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-black {
+  background-color: #8b44ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #8b44ca;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-primary-light-black:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-primary-light-black:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-primary-light-black.border {
+  background-color: black;
+  color: white;
+}
+
+.button-primary-light-black.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-primary-light-black.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-primary {
+  background-color: #7949da;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
   border: 5px solid #7949da;
-  color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.button.bg-secondary.border {
-  background-color: white;
-  color: black;
+.button-secondary-primary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
 }
 
-.button.bg-secondary:hover {
-  background-color: white;
-  color: black;
+.button-secondary-primary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
-.button.bg-secondary.border:hover {
+.button-secondary-primary.border {
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-secondary-primary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #7949da;
   color: black;
 }
 
-.button.bg-success {
+.button-secondary-primary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-primary-light {
+  background-color: #7949da;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #7949da;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-secondary-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-secondary-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-primary-light.border {
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-secondary-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-secondary {
+  background-color: #7949da;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #7949da;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-secondary-secondary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-secondary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-secondary.border {
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-secondary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-secondary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-success {
+  background-color: #7949da;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #7949da;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-secondary-success:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #3dca15;
+  color: white;
+}
+
+.button-secondary-success:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-success.border {
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-secondary-success.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-success.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-danger {
+  background-color: #7949da;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #7949da;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-secondary-danger:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-secondary-danger:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-danger.border {
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-secondary-danger.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-danger.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-warning {
+  background-color: #7949da;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #7949da;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-secondary-warning:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-secondary-warning:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-warning.border {
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-secondary-warning.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-warning.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-info {
+  background-color: #7949da;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #7949da;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-secondary-info:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-secondary-info:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-info.border {
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-secondary-info.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-info.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-light {
+  background-color: #7949da;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #7949da;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-secondary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-secondary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-light.border {
+  background-color: silver;
+  color: black;
+}
+
+.button-secondary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-dark {
+  background-color: #7949da;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #7949da;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-secondary-dark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-secondary-dark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-dark.border {
+  background-color: #868686;
+  color: black;
+}
+
+.button-secondary-dark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-dark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-verydark {
+  background-color: #7949da;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #7949da;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-secondary-verydark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-secondary-verydark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-verydark.border {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-secondary-verydark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-verydark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-white {
+  background-color: #7949da;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #7949da;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-secondary-white:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-secondary-white:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button-secondary-white.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-white.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-black {
+  background-color: #7949da;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #7949da;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-secondary-black:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-secondary-black:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-secondary-black.border {
+  background-color: black;
+  color: white;
+}
+
+.button-secondary-black.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-secondary-black.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-primary {
+  background-color: #3dca15;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
   border: 5px solid #3dca15;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-success-primary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
   color: white;
 }
 
-.button.bg-success.border {
-  background-color: white;
-  color: black;
+.button-success-primary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
-.button.bg-success:hover {
-  background-color: white;
-  color: black;
+.button-success-primary.border {
+  background-color: #4b2d87;
+  color: white;
 }
 
-.button.bg-success.border:hover {
+.button-success-primary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #3dca15;
   color: white;
 }
 
-.button.bg-danger {
+.button-success-primary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-primary-light {
+  background-color: #3dca15;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3dca15;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-success-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-success-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-primary-light.border {
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-success-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-secondary {
+  background-color: #3dca15;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3dca15;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-success-secondary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-success-secondary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-secondary.border {
+  background-color: #7949da;
+  color: black;
+}
+
+.button-success-secondary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-secondary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-success {
+  background-color: #3dca15;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3dca15;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-success-success:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-success:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-success.border {
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-success.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-success.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-danger {
+  background-color: #3dca15;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3dca15;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-success-danger:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #c3150c;
+  color: white;
+}
+
+.button-success-danger:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-danger.border {
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-success-danger.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-danger.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-warning {
+  background-color: #3dca15;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3dca15;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-success-warning:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-success-warning:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-warning.border {
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-success-warning.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-warning.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-info {
+  background-color: #3dca15;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3dca15;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-success-info:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-success-info:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-info.border {
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-success-info.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-info.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-light {
+  background-color: #3dca15;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3dca15;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-success-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-success-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-light.border {
+  background-color: silver;
+  color: black;
+}
+
+.button-success-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-dark {
+  background-color: #3dca15;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3dca15;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-success-dark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-success-dark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-dark.border {
+  background-color: #868686;
+  color: black;
+}
+
+.button-success-dark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-dark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-verydark {
+  background-color: #3dca15;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3dca15;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-success-verydark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-success-verydark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-verydark.border {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-success-verydark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-verydark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-white {
+  background-color: #3dca15;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3dca15;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-success-white:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-success-white:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button-success-white.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-white.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-black {
+  background-color: #3dca15;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3dca15;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-success-black:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-success-black:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-success-black.border {
+  background-color: black;
+  color: white;
+}
+
+.button-success-black.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-success-black.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-primary {
+  background-color: #c3150c;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
   border: 5px solid #c3150c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-danger-primary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
   color: white;
 }
 
-.button.bg-danger.border {
-  background-color: white;
-  color: black;
+.button-danger-primary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
-.button.bg-danger:hover {
-  background-color: white;
-  color: black;
+.button-danger-primary.border {
+  background-color: #4b2d87;
+  color: white;
 }
 
-.button.bg-danger.border:hover {
+.button-danger-primary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #c3150c;
   color: white;
 }
 
-.button.bg-warning {
+.button-danger-primary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-primary-light {
+  background-color: #c3150c;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #c3150c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-danger-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-danger-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-primary-light.border {
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-danger-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-secondary {
+  background-color: #c3150c;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #c3150c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-danger-secondary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-danger-secondary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-secondary.border {
+  background-color: #7949da;
+  color: black;
+}
+
+.button-danger-secondary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-secondary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-success {
+  background-color: #c3150c;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #c3150c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-danger-success:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-danger-success:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-success.border {
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-danger-success.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-success.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-danger {
+  background-color: #c3150c;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #c3150c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-danger-danger:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-danger:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-danger.border {
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-danger.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-danger.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-warning {
+  background-color: #c3150c;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #c3150c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-danger-warning:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #f3c703;
+  color: black;
+}
+
+.button-danger-warning:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-warning.border {
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-danger-warning.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-warning.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-info {
+  background-color: #c3150c;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #c3150c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-danger-info:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-danger-info:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-info.border {
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-danger-info.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-info.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-light {
+  background-color: #c3150c;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #c3150c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-danger-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-danger-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-light.border {
+  background-color: silver;
+  color: black;
+}
+
+.button-danger-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-dark {
+  background-color: #c3150c;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #c3150c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-danger-dark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-danger-dark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-dark.border {
+  background-color: #868686;
+  color: black;
+}
+
+.button-danger-dark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-dark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-verydark {
+  background-color: #c3150c;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #c3150c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-danger-verydark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-danger-verydark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-verydark.border {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-danger-verydark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-verydark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-white {
+  background-color: #c3150c;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #c3150c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-danger-white:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-danger-white:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button-danger-white.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-white.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-black {
+  background-color: #c3150c;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #c3150c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-danger-black:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-danger-black:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-danger-black.border {
+  background-color: black;
+  color: white;
+}
+
+.button-danger-black.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-danger-black.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-primary {
+  background-color: #f3c703;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
   border: 5px solid #f3c703;
-  color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.button.bg-warning.border {
-  background-color: white;
-  color: black;
+.button-warning-primary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
 }
 
-.button.bg-warning:hover {
-  background-color: white;
-  color: black;
+.button-warning-primary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
-.button.bg-warning.border:hover {
+.button-warning-primary.border {
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-warning-primary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #f3c703;
   color: black;
 }
 
-.button.bg-info {
+.button-warning-primary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-primary-light {
+  background-color: #f3c703;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #f3c703;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-warning-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-warning-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-primary-light.border {
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-warning-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-secondary {
+  background-color: #f3c703;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #f3c703;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-warning-secondary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-warning-secondary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-secondary.border {
+  background-color: #7949da;
+  color: black;
+}
+
+.button-warning-secondary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-secondary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-success {
+  background-color: #f3c703;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #f3c703;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-warning-success:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-warning-success:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-success.border {
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-warning-success.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-success.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-danger {
+  background-color: #f3c703;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #f3c703;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-warning-danger:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-warning-danger:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-danger.border {
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-warning-danger.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-danger.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-warning {
+  background-color: #f3c703;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #f3c703;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-warning-warning:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-warning:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-warning.border {
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-warning.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-warning.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-info {
+  background-color: #f3c703;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #f3c703;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-warning-info:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #3bb5ff;
+  color: black;
+}
+
+.button-warning-info:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-info.border {
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-warning-info.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-info.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-light {
+  background-color: #f3c703;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #f3c703;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-warning-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-warning-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-light.border {
+  background-color: silver;
+  color: black;
+}
+
+.button-warning-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-dark {
+  background-color: #f3c703;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #f3c703;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-warning-dark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-warning-dark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-dark.border {
+  background-color: #868686;
+  color: black;
+}
+
+.button-warning-dark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-dark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-verydark {
+  background-color: #f3c703;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #f3c703;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-warning-verydark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-warning-verydark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-verydark.border {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-warning-verydark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-verydark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-white {
+  background-color: #f3c703;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #f3c703;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-warning-white:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-warning-white:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button-warning-white.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-white.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-black {
+  background-color: #f3c703;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #f3c703;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-warning-black:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-warning-black:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-warning-black.border {
+  background-color: black;
+  color: white;
+}
+
+.button-warning-black.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-warning-black.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-primary {
+  background-color: #3bb5ff;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
   border: 5px solid #3bb5ff;
-  color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.button.bg-info.border {
-  background-color: white;
-  color: black;
+.button-info-primary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
 }
 
-.button.bg-info:hover {
-  background-color: white;
-  color: black;
+.button-info-primary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
-.button.bg-info.border:hover {
+.button-info-primary.border {
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-info-primary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #3bb5ff;
   color: black;
 }
 
-.button.bg-light {
+.button-info-primary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-primary-light {
+  background-color: #3bb5ff;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3bb5ff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-info-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-info-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-primary-light.border {
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-info-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-secondary {
+  background-color: #3bb5ff;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3bb5ff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-info-secondary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-info-secondary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-secondary.border {
+  background-color: #7949da;
+  color: black;
+}
+
+.button-info-secondary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-secondary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-success {
+  background-color: #3bb5ff;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3bb5ff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-info-success:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-info-success:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-success.border {
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-info-success.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-success.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-danger {
+  background-color: #3bb5ff;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3bb5ff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-info-danger:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-info-danger:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-danger.border {
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-info-danger.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-danger.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-warning {
+  background-color: #3bb5ff;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3bb5ff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-info-warning:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-info-warning:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-warning.border {
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-info-warning.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-warning.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-info {
+  background-color: #3bb5ff;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3bb5ff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-info-info:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-info:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-info.border {
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-info.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-info.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-light {
+  background-color: #3bb5ff;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3bb5ff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-info-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: silver;
+  color: black;
+}
+
+.button-info-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-light.border {
+  background-color: silver;
+  color: black;
+}
+
+.button-info-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-dark {
+  background-color: #3bb5ff;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3bb5ff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-info-dark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-info-dark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-dark.border {
+  background-color: #868686;
+  color: black;
+}
+
+.button-info-dark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-dark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-verydark {
+  background-color: #3bb5ff;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3bb5ff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-info-verydark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-info-verydark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-verydark.border {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-info-verydark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-verydark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-white {
+  background-color: #3bb5ff;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3bb5ff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-info-white:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-info-white:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button-info-white.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-white.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-black {
+  background-color: #3bb5ff;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #3bb5ff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-info-black:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-info-black:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-info-black.border {
+  background-color: black;
+  color: white;
+}
+
+.button-info-black.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-info-black.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-primary {
+  background-color: silver;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
   border: 5px solid silver;
-  color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.button.bg-light.border {
-  background-color: white;
-  color: black;
+.button-light-primary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
 }
 
-.button.bg-light:hover {
-  background-color: white;
-  color: black;
+.button-light-primary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
-.button.bg-light.border:hover {
+.button-light-primary.border {
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-light-primary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: silver;
   color: black;
 }
 
-.button.bg-dark {
+.button-light-primary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-primary-light {
+  background-color: silver;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid silver;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-light-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-light-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-primary-light.border {
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-light-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-light-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-secondary {
+  background-color: silver;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid silver;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-light-secondary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-light-secondary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-secondary.border {
+  background-color: #7949da;
+  color: black;
+}
+
+.button-light-secondary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-light-secondary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-success {
+  background-color: silver;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid silver;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-light-success:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-light-success:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-success.border {
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-light-success.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-light-success.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-danger {
+  background-color: silver;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid silver;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-light-danger:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-light-danger:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-danger.border {
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-light-danger.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-light-danger.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-warning {
+  background-color: silver;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid silver;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-light-warning:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-light-warning:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-warning.border {
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-light-warning.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-light-warning.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-info {
+  background-color: silver;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid silver;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-light-info:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-light-info:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-info.border {
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-light-info.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-light-info.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-light {
+  background-color: silver;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid silver;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-light-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-light-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-light.border {
+  background-color: silver;
+  color: black;
+}
+
+.button-light-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-light-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-dark {
+  background-color: silver;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid silver;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-light-dark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #868686;
+  color: black;
+}
+
+.button-light-dark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-dark.border {
+  background-color: #868686;
+  color: black;
+}
+
+.button-light-dark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-light-dark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-verydark {
+  background-color: silver;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid silver;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-light-verydark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-light-verydark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-verydark.border {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-light-verydark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-light-verydark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-white {
+  background-color: silver;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid silver;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-light-white:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-light-white:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button-light-white.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-light-white.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-black {
+  background-color: silver;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid silver;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-light-black:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-light-black:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-light-black.border {
+  background-color: black;
+  color: white;
+}
+
+.button-light-black.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-light-black.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-primary {
+  background-color: #868686;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
   border: 5px solid #868686;
-  color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.button.bg-dark.border {
-  background-color: white;
-  color: black;
+.button-dark-primary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
 }
 
-.button.bg-dark:hover {
-  background-color: white;
-  color: black;
+.button-dark-primary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
-.button.bg-dark.border:hover {
+.button-dark-primary.border {
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-dark-primary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #868686;
   color: black;
 }
 
-.button.bg-verydark {
+.button-dark-primary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-primary-light {
+  background-color: #868686;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #868686;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-dark-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-dark-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-primary-light.border {
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-dark-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-secondary {
+  background-color: #868686;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #868686;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-dark-secondary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-dark-secondary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-secondary.border {
+  background-color: #7949da;
+  color: black;
+}
+
+.button-dark-secondary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-secondary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-success {
+  background-color: #868686;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #868686;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-dark-success:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-dark-success:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-success.border {
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-dark-success.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-success.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-danger {
+  background-color: #868686;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #868686;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-dark-danger:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-dark-danger:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-danger.border {
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-dark-danger.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-danger.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-warning {
+  background-color: #868686;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #868686;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-dark-warning:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-dark-warning:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-warning.border {
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-dark-warning.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-warning.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-info {
+  background-color: #868686;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #868686;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-dark-info:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-dark-info:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-info.border {
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-dark-info.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-info.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-light {
+  background-color: #868686;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #868686;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-dark-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-dark-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-light.border {
+  background-color: silver;
+  color: black;
+}
+
+.button-dark-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-dark {
+  background-color: #868686;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #868686;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-dark-dark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-dark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-dark.border {
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-dark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-dark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-verydark {
+  background-color: #868686;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #868686;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-dark-verydark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #2e2e2e;
+  color: white;
+}
+
+.button-dark-verydark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-verydark.border {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-dark-verydark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-verydark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-white {
+  background-color: #868686;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #868686;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-dark-white:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-dark-white:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button-dark-white.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-white.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-black {
+  background-color: #868686;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #868686;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-dark-black:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-dark-black:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-dark-black.border {
+  background-color: black;
+  color: white;
+}
+
+.button-dark-black.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-dark-black.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-primary {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
   border: 5px solid #2e2e2e;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-verydark-primary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
   color: white;
 }
 
-.button.bg-verydark.border {
-  background-color: white;
-  color: black;
+.button-verydark-primary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
-.button.bg-verydark:hover {
-  background-color: white;
-  color: black;
+.button-verydark-primary.border {
+  background-color: #4b2d87;
+  color: white;
 }
 
-.button.bg-verydark.border:hover {
+.button-verydark-primary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: #2e2e2e;
   color: white;
 }
 
-.button.bg-white {
+.button-verydark-primary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-primary-light {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #2e2e2e;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-verydark-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-verydark-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-primary-light.border {
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-verydark-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-secondary {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #2e2e2e;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-verydark-secondary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-verydark-secondary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-secondary.border {
+  background-color: #7949da;
+  color: black;
+}
+
+.button-verydark-secondary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-secondary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-success {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #2e2e2e;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-verydark-success:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-verydark-success:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-success.border {
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-verydark-success.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-success.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-danger {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #2e2e2e;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-verydark-danger:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-verydark-danger:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-danger.border {
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-verydark-danger.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-danger.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-warning {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #2e2e2e;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-verydark-warning:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-verydark-warning:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-warning.border {
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-verydark-warning.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-warning.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-info {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #2e2e2e;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-verydark-info:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-verydark-info:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-info.border {
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-verydark-info.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-info.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-light {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #2e2e2e;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-verydark-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-verydark-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-light.border {
+  background-color: silver;
+  color: black;
+}
+
+.button-verydark-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-dark {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #2e2e2e;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-verydark-dark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-verydark-dark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-dark.border {
+  background-color: #868686;
+  color: black;
+}
+
+.button-verydark-dark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-dark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-verydark {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #2e2e2e;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-verydark-verydark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-verydark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-verydark.border {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-verydark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-verydark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-white {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #2e2e2e;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-verydark-white:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: white;
+  color: black;
+}
+
+.button-verydark-white:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button-verydark-white.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-white.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-black {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid #2e2e2e;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-verydark-black:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-verydark-black:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-verydark-black.border {
+  background-color: black;
+  color: white;
+}
+
+.button-verydark-black.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-verydark-black.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-primary {
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
   border: 5px solid white;
-  color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.button.bg-white.border {
+.button-white-primary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-white-primary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-primary.border {
+  background-color: #4b2d87;
+  color: white;
+}
+
+.button-white-primary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: white;
   color: black;
 }
 
-.button.bg-white:hover {
+.button-white-primary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-primary-light {
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-white-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-white-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-primary-light.border {
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-white-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: white;
   color: black;
 }
 
-.button.bg-white.border:hover {
+.button-white-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-secondary {
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-white-secondary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-white-secondary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-secondary.border {
+  background-color: #7949da;
+  color: black;
+}
+
+.button-white-secondary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: white;
   color: black;
 }
 
-.button.bg-black {
+.button-white-secondary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-success {
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-white-success:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-white-success:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-success.border {
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-white-success.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-white-success.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-danger {
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-white-danger:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-white-danger:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-danger.border {
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-white-danger.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-white-danger.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-warning {
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-white-warning:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-white-warning:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-warning.border {
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-white-warning.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-white-warning.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-info {
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-white-info:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-white-info:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-info.border {
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-white-info.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-white-info.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-light {
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-white-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-white-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-light.border {
+  background-color: silver;
+  color: black;
+}
+
+.button-white-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-white-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-dark {
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-white-dark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-white-dark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-dark.border {
+  background-color: #868686;
+  color: black;
+}
+
+.button-white-dark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-white-dark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-verydark {
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-white-verydark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-white-verydark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-verydark.border {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-white-verydark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-white-verydark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-white {
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-white-white:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-white-white:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button-white-white.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-white-white.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-black {
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-white-black:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: black;
+  color: white;
+}
+
+.button-white-black:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-white-black.border {
+  background-color: black;
+  color: white;
+}
+
+.button-white-black.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-white-black.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-primary {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
   border: 5px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-black-primary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #4b2d87;
   color: white;
 }
 
-.button.bg-black.border {
-  background-color: white;
-  color: black;
+.button-black-primary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
-.button.bg-black:hover {
-  background-color: white;
-  color: black;
+.button-black-primary.border {
+  background-color: #4b2d87;
+  color: white;
 }
 
-.button.bg-black.border:hover {
+.button-black-primary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
   background-color: black;
   color: white;
 }
 
-/* #endregion Color Button */
+.button-black-primary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-primary-light {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-black-primary-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-black-primary-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-primary-light.border {
+  background-color: #8b44ca;
+  color: black;
+}
+
+.button-black-primary-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-black-primary-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-secondary {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-black-secondary:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #7949da;
+  color: black;
+}
+
+.button-black-secondary:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-secondary.border {
+  background-color: #7949da;
+  color: black;
+}
+
+.button-black-secondary.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-black-secondary.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-success {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-black-success:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-black-success:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-success.border {
+  background-color: #3dca15;
+  color: white;
+}
+
+.button-black-success.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-black-success.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-danger {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-black-danger:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-black-danger:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-danger.border {
+  background-color: #c3150c;
+  color: white;
+}
+
+.button-black-danger.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-black-danger.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-warning {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-black-warning:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-black-warning:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-warning.border {
+  background-color: #f3c703;
+  color: black;
+}
+
+.button-black-warning.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-black-warning.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-info {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-black-info:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-black-info:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-info.border {
+  background-color: #3bb5ff;
+  color: black;
+}
+
+.button-black-info.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-black-info.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-light {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-black-light:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: silver;
+  color: black;
+}
+
+.button-black-light:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-light.border {
+  background-color: silver;
+  color: black;
+}
+
+.button-black-light.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-black-light.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-dark {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-black-dark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #868686;
+  color: black;
+}
+
+.button-black-dark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-dark.border {
+  background-color: #868686;
+  color: black;
+}
+
+.button-black-dark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-black-dark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-verydark {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-black-verydark:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-black-verydark:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-verydark.border {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.button-black-verydark.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-black-verydark.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-white {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-black-white:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: white;
+  color: black;
+}
+
+.button-black-white:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-white.border {
+  background-color: white;
+  color: black;
+}
+
+.button-black-white.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-black-white.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-black {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: 0.2rem 0.5rem 0.5rem 0.2rem;
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+  cursor: pointer;
+  border-radius: 0;
+  border: 5px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button-black-black:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-black-black:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.button-black-black.border {
+  background-color: black;
+  color: white;
+}
+
+.button-black-black.border:hover {
+  -webkit-box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+          box-shadow: calc(8 / 2 * 1px) calc(8 / 2 * 1px) 0 #000000;
+  background-color: black;
+  color: white;
+}
+
+.button-black-black.border:active {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
 /* #region Colors */
 /* #region Background */
 .bg-primary {
@@ -513,6 +7009,7 @@ footer .footer-email {
 footer .footer-email p {
   margin-top: 0.2rem;
   font-size: calc(1.275rem + 0.3vw);
+  text-decoration: none;
 }
 
 @media (min-width: 1200px) {
@@ -571,21 +7068,53 @@ footer .footer-email p {
 }
 
 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+form .form-heading {
+  display: block;
+}
+
+form .form-heading p {
+  margin-top: 0.5rem;
+  margin-left: 0.4rem;
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  form .form-heading p {
+    font-size: 1.75rem;
+  }
+}
+
+form label {
+  margin-left: 0.5rem;
 }
 
 input[type="Text"] {
-  width: 100%;
+  width: 90%;
   padding: 10px 15px 5px;
-  margin: 0px 0 20px;
+  margin: 0.2rem auto 0.2rem auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
   border-bottom: 5px solid #8b44ca;
   font-size: 1.25rem;
-  font-family: 'Raleway', sans-serif;
 }
 
 input[type="Text"]:focus {
@@ -604,15 +7133,14 @@ label.lbl-text {
 }
 
 input[type="Date"] {
-  width: 100%;
+  width: 90%;
   padding: 10px 15px 5px;
-  margin: 0px 0 20px;
+  margin: 0.2rem auto 0.2rem auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
   border-bottom: 5px solid #8b44ca;
   font-size: 1.25rem;
-  font-family: 'Raleway', sans-serif;
 }
 
 input[type="Date"]:focus {
@@ -626,15 +7154,14 @@ input[type="Date"]:focus {
 }
 
 input[type="Number"] {
-  width: 100%;
+  width: 90%;
   padding: 10px 15px 5px;
-  margin: 0px 0 20px;
+  margin: 0.2rem auto 0.2rem auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
   border-bottom: 5px solid #8b44ca;
   font-size: 1.25rem;
-  font-family: 'Raleway', sans-serif;
 }
 
 input[type="Number"]:focus {
@@ -647,8 +7174,13 @@ input[type="Number"]:focus {
           transition-duration: 0.5s;
 }
 
-form > button.right {
-  float: right;
+.form-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 /* The Modal (background) */
@@ -2078,6 +8610,11 @@ p {
   margin-right: auto;
 }
 
+.shadow {
+  -webkit-box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+          box-shadow: calc(6 * 1px) calc(6 * 1px) 0 #000000;
+}
+
 nav {
   height: 5rem;
   width: 100%;
@@ -2150,25 +8687,23 @@ nav {
   display: none;
 }
 
-.nav-links li a:hover:not(.button):after {
+.nav-links li a:hover:not(.nav-button):after {
   width: 100%;
 }
 
-.button.nav-button {
+.nav-button {
   color: white;
-  border-radius: 25px;
   padding: 7px 5px;
   font-size: 1rem;
 }
 
-.button.nav-button:hover {
+.nav-button:hover {
   background: #8b44ca;
 }
 
-.button.nav-button.border {
+.nav-button.border {
   background: #4b2d87;
   color: white;
-  border-radius: 25px;
   border-width: 4px;
 }
 
@@ -2264,6 +8799,105 @@ nav {
   .toggle .line3 {
     -webkit-transform: rotate(45deg) translate(-5px, -6px);
             transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.5rem;
+}
+
+.card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-img img {
+  height: 10rem;
+}
+
+.card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25rem;
+}
+
+.card-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.5rem;
+}
+
+.article-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.article-img img {
+  height: 10rem;
+}
+
+.article-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25rem;
+}
+
+.article-text p {
+  margin: 0.5rem;
+}
+
+.article-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (max-width: 800px) {
+  .article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .article.right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 /*# sourceMappingURL=MrCodeCSS.css.map */
