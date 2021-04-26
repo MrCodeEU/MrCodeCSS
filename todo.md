@@ -19,6 +19,6 @@ Noch fehlende Elemente hinzufügen:
 - [x] Fonts awesom integrieren für icons ?
 - [ ] Icons aus dem Web ziehen
 - [x] Button animations cooler
-- [ ] Button mit button tag machen statt link
-- [ ] Button muss so erstellt werden, dass jeweils Farbe und Farbe bei hovern festgelegt werden kann (button bg-primary -> button-primary-info)
+- [x] Button mit button tag machen statt link
+- [x] Button muss so erstellt werden, dass jeweils Farbe und Farbe bei hovern festgelegt werden kann
 - [ ] Navbar links statt unterstreichen soll kompletter hintergrund von links nach rechts sliden bei hover

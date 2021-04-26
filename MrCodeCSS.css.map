@@ -14,7 +14,9 @@
         "_misc.scss",
         "_navbar.scss",
         "_cards.scss",
-        "_article.scss"
+        "_article.scss",
+        "_background.scss",
+        "_animations.scss"
     ],
     "names": [],
     "file": "MrCodeCSS.css"
