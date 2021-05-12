@@ -7116,7 +7116,7 @@ input[type="Text"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
-  border-bottom: 5px solid #8b44ca;
+  border-bottom: 5px solid silver;
   font-size: 1.25rem;
 }
 
@@ -7142,7 +7142,7 @@ input[type="Date"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
-  border-bottom: 5px solid #8b44ca;
+  border-bottom: 5px solid silver;
   font-size: 1.25rem;
 }
 
@@ -7163,7 +7163,7 @@ input[type="Number"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
-  border-bottom: 5px solid #8b44ca;
+  border-bottom: 5px solid silver;
   font-size: 1.25rem;
 }
 

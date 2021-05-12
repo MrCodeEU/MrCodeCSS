@@ -31,7 +31,7 @@ input[type="Text"]{
     margin: 0.2rem auto 0.2rem auto;
     box-sizing: border-box;
     border: none;
-    border-bottom: $bor-width solid $primary-light-col;
+    border-bottom: $bor-width solid $light-col;
     @include font-size(1rem * 1.25);
 }
 
@@ -56,7 +56,7 @@ input[type="Date"]{
     margin: 0.2rem auto 0.2rem auto;
     box-sizing: border-box;
     border: none;
-    border-bottom: $bor-width solid $primary-light-col;
+    border-bottom: $bor-width solid $light-col;
     @include font-size(1rem * 1.25);
 }
 
@@ -75,7 +75,7 @@ input[type="Number"]{
     margin: 0.2rem auto 0.2rem auto;
     box-sizing: border-box;
     border: none;
-    border-bottom: $bor-width solid $primary-light-col;
+    border-bottom: $bor-width solid $light-col;
     @include font-size(1rem * 1.25);
 }
 
